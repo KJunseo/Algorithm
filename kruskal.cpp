@@ -45,7 +45,7 @@ public:
         this->distance = distance;
     }
     // 정렬기준(비용이 작은 순 대로 정렬)
-    bool operator < (Edge &edge) {
+    bool operator < (const Edge &edge) const {
         return this->distance < edge.distance;
     }
 };
